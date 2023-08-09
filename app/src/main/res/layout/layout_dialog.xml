@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog"
+    android:padding="@dimen/_16sdp">
+
+    <ImageView
+        android:id="@+id/imgLogOut"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:src="@drawable/baseline_logout_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/aquamarine5" />
+
+    <TextView
+        android:id="@+id/txtConform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="Are you sure want to \n Sign out?"
+        android:textAlignment="center"
+        android:textColor="@color/aquamarine6"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogOut" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_26sdp"
+        app:layout_constraintTop_toBottomOf="@id/txtConform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/signOut_yes"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:background="@drawable/shape_txtv_dialog"
+            android:backgroundTint="@color/aquamarine4"/>
+
+        <TextView
+            android:id="@+id/signOut_no"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/aquamarine4"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:textAlignment="center"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:background="@drawable/shape_txtv_dialog"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

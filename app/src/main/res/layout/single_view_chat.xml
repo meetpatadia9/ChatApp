@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_6sdp">
+
+    <FrameLayout
+        android:id="@+id/chat_profileFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_imgView"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            tools:src="@drawable/user_default_img"/>
+
+        <ImageView
+            android:id="@+id/imgV_isOnline"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/shape_person_online"
+            android:visibility="gone"
+            android:layout_gravity="bottom|end"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/chat_lastMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        android:layout_marginStart="@dimen/_11sdp"
+        app:layout_constraintTop_toBottomOf="@id/chat_personName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chat_profileFrame"/>
+
+    <TextView
+        android:id="@+id/chat_personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Manan Suthar"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/_11sdp"
+        app:layout_constraintTop_toTopOf="@id/chat_profileFrame"
+        app:layout_constraintStart_toEndOf="@id/chat_profileFrame"
+        app:layout_constraintBottom_toTopOf="@id/chat_lastMsg"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

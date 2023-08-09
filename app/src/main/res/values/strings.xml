@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="default_about">Hey there!! I am using this app!</string>
+
+</resources>
